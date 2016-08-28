@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/ios-utils.git"
+    "url": "git://github.com/macacajs/ios-utils.git"
   },
   "dependencies": {
     "bplist-parser": "~0.1.1",
@@ -29,9 +29,6 @@
   "pre-commit": [
     "jshint"
   ],
-  "homepage": "https://github.com/xudafeng/ios-utils",
-  "author": "xudafeng",
-  "email": "xudafeng@126.com",
-  "blog": "http://xdf.me",
+  "homepage": "https://github.com/macacajs/ios-utils",
   "license": "MIT"
 }
