@@ -1,9 +1,10 @@
 {
   "name": "ios-utils",
-  "version": "1.0.1",
-  "description": "ios-utils",
+  "version": "1.0.2",
+  "description": "ios utils",
   "keywords": [
-    "ios-utils"
+    "ios",
+    "utils"
   ],
   "main": "index.js",
   "repository": {
