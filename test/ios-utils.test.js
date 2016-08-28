@@ -3,7 +3,7 @@
 var iOSUtils = require('..');
 
 describe('test', function() {
-  it('should be ok', function *(done) {
+  it('should be ok', function *() {
     var xcodePath = yield iOSUtils.getXcodePath();
     xcodePath.should.be.ok;
     console.log(xcodePath);
@@ -13,6 +13,5 @@ describe('test', function() {
     var iOSSDKVersion = yield iOSUtils.getIOSSDKVersion();
     iOSSDKVersion.should.be.ok;
     console.log(iOSSDKVersion);
-    done();
   });
 });
