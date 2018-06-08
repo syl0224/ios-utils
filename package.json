@@ -1,6 +1,6 @@
 {
   "name": "ios-utils",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "ios utils",
   "keywords": [
     "ios",
@@ -18,18 +18,17 @@
   },
   "devDependencies": {
     "co-mocha": "*",
-    "istanbul": "^0.4.5",
     "jshint": "*",
     "mocha": "*",
-    "pre-commit": "1.1.1",
-    "should": "*"
+    "nyc": "^12.0.2",
+    "pre-commit": "^1.2.2"
   },
   "scripts": {
-    "test": "make test",
-    "jshint": "make jshint"
+    "test": "nyc --reporter=lcov --reporter=text mocha",
+    "lint": "jshint ."
   },
   "pre-commit": [
-    "jshint"
+    "lint"
   ],
   "homepage": "https://github.com/macacajs/ios-utils",
   "license": "MIT"
