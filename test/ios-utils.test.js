@@ -1,17 +1,18 @@
 'use strict';
 
-var iOSUtils = require('..');
+const iOSUtils = require('..');
+const assert = require('assert');
 
 describe('test', function() {
   it('should be ok', function *() {
     var xcodePath = yield iOSUtils.getXcodePath();
-    xcodePath.should.be.ok();
+    assert.ok(xcodePath);
     console.log(xcodePath);
     var xcodeVersion = yield iOSUtils.getXcodeVersion();
-    xcodeVersion.should.be.ok();
+    assert.ok(xcodeVersion);
     console.log(xcodeVersion);
     var iOSSDKVersion = yield iOSUtils.getIOSSDKVersion();
-    iOSSDKVersion.should.be.ok();
+    assert.ok(iOSSDKVersion);
     console.log(iOSSDKVersion);
   });
 });

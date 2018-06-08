@@ -3,8 +3,7 @@ node_modules
 npm-debug.log
 .idea/*
 Thumbs.db
+.nyc_output/
 coverage/
-.project
-build/
 *.sw*
 *.un~
